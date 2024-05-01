@@ -1,0 +1,15 @@
+[package]
+name = "pqcat"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Jacob Trueb <jtrueb@northwestern.edu>"]
+description = "A simple utility to print parquet file summaries"
+
+[dependencies.polars]
+version = "0.39.2"
+features = [
+    "lazy",
+    "parquet",
+    "dtype-full"
+]
